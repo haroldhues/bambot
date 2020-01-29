@@ -1,0 +1,168 @@
+...
+build	27-Jan-2020 21:32:16	bamboo.sh: Executing sq test
+build	27-Jan-2020 21:32:16	*****************************************************************
+build	27-Jan-2020 21:32:16	sdk/sq test    
+build	27-Jan-2020 21:32:16	*****************************************************************
+build	27-Jan-2020 21:32:17	Compiling Java SDK examples...
+build	27-Jan-2020 21:32:18	Note: ConditionExample.java uses or overrides a deprecated API.
+build	27-Jan-2020 21:32:18	Note: Recompile with -Xlint:deprecation for details.
+build	27-Jan-2020 21:32:18	
+build	27-Jan-2020 21:32:18	Creating jar file...
+build	27-Jan-2020 21:32:18	added manifest
+build	27-Jan-2020 21:32:18	adding: ConditionExample.class(in = 4210) (out= 2096)(deflated 50%)
+build	27-Jan-2020 21:32:18	adding: Main.class(in = 1700) (out= 938)(deflated 44%)
+build	27-Jan-2020 21:32:18	adding: SignalExample.class(in = 3790) (out= 1984)(deflated 47%)
+build	27-Jan-2020 21:32:18	Removing /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir...
+build	27-Jan-2020 21:32:18	Launching command line:
+build	27-Jan-2020 21:32:18	"/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/seeq" -q -d "/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir" start   --wait-timeout 240 --debug   --mode interactive
+build	27-Jan-2020 21:32:19	Starting Seeq Server interactively...
+build	27-Jan-2020 21:32:19	Waiting up to 240 seconds for Seeq Server to be responsive...
+build	27-Jan-2020 21:34:23	Seeq Server is responsive and ready to use.
+build	27-Jan-2020 21:34:27	============================= test session starts ==============================
+build	27-Jan-2020 21:34:27	platform linux -- Python 3.7.3, pytest-5.1.2, py-1.8.1, pluggy-0.13.1 -- /home/bamboo/sq/toolchain/python-3.7.3-64bit-linux/files/bin/python3
+build	27-Jan-2020 21:34:27	cachedir: .pytest_cache
+build	27-Jan-2020 21:34:27	rootdir: /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1, inifile: pytest.ini
+build	27-Jan-2020 21:34:27	plugins: timeout-1.3.3
+build	27-Jan-2020 21:34:29	collecting ... collected 81 items / 7 deselected / 74 selected
+build	27-Jan-2020 21:34:29	
+build	27-Jan-2020 21:34:35	spy/assets/tests/test_assets_system.py::test_build PASSED                [  1%]
+build	27-Jan-2020 21:34:37	spy/assets/tests/test_assets_system.py::test_build_with_module PASSED    [  2%]
+build	27-Jan-2020 21:34:39	spy/assets/tests/test_assets_system.py::test_no_path PASSED              [  4%]
+build	27-Jan-2020 21:34:40	spy/assets/tests/test_assets_system.py::test_components PASSED           [  5%]
+build	27-Jan-2020 21:34:42	spy/assets/tests/test_assets_system.py::test_reaching_up_and_down PASSED [  6%]
+build	27-Jan-2020 21:34:44	spy/assets/tests/test_assets_system.py::test_workbook_build PASSED       [  8%]
+build	27-Jan-2020 21:35:01	spy/assets/tests/test_assets_system.py::test_topic_with_images PASSED    [  9%]
+build	27-Jan-2020 21:35:06	spy/tests/test_login.py::test_bad_login PASSED                           [ 10%]
+build	27-Jan-2020 21:35:06	spy/tests/test_login.py::test_good_login PASSED                          [ 12%]
+build	27-Jan-2020 21:35:06	spy/tests/test_login.py::test_credentials_file_with_username PASSED      [ 13%]
+build	27-Jan-2020 21:35:08	spy/tests/test_pull.py::test_pull_signal_with_grid PASSED                [ 14%]
+build	27-Jan-2020 21:35:15	spy/tests/test_pull.py::test_pull_signal_no_grid PASSED                  [ 16%]
+build	27-Jan-2020 21:35:19	spy/tests/test_pull.py::test_pull_empty_results PASSED                   [ 17%]
+build	27-Jan-2020 21:35:20	spy/tests/test_pull.py::test_pull_across_assets PASSED                   [ 18%]
+build	27-Jan-2020 21:35:25	spy/tests/test_pull.py::test_group_by_with_scalars_and_conditions PASSED [ 20%]
+build	27-Jan-2020 21:35:25	spy/tests/test_pull.py::test_bad_timezone PASSED                         [ 21%]
+build	27-Jan-2020 21:35:25	spy/tests/test_pull.py::test_no_end_date PASSED                          [ 22%]
+build	27-Jan-2020 21:35:27	spy/tests/test_pull.py::test_bounding_values PASSED                      [ 24%]
+build	27-Jan-2020 21:35:32	spy/tests/test_pull.py::test_pull_condition_as_capsules PASSED           [ 25%]
+build	27-Jan-2020 21:35:32	spy/tests/test_pull.py::test_pull_bad_id PASSED                          [ 27%]
+build	27-Jan-2020 21:35:36	spy/tests/test_pull.py::test_pull_condition_as_signal PASSED             [ 28%]
+build	27-Jan-2020 21:35:48	spy/tests/test_pull.py::test_pull_swapped_condition PASSED               [ 29%]
+build	27-Jan-2020 21:35:48	spy/tests/test_pull.py::test_seeq_server_error PASSED                    [ 31%]
+build	27-Jan-2020 21:35:50	spy/tests/test_pull.py::test_pull_scalar_only PASSED                     [ 32%]
+build	27-Jan-2020 21:35:53	spy/tests/test_push.py::test_push_signal PASSED                          [ 33%]
+build	27-Jan-2020 21:36:01	spy/tests/test_push.py::test_push_from_csv PASSED                        [ 35%]
+build	27-Jan-2020 21:36:01	spy/tests/test_push.py::test_bad_calculation PASSED                      [ 36%]
+build	27-Jan-2020 21:36:03	spy/tests/test_push.py::test_push_calculated_signal PASSED               [ 37%]
+build	27-Jan-2020 21:36:06	spy/tests/test_push.py::test_edit_existing_calculated_items PASSED       [ 39%]
+build	27-Jan-2020 21:36:07	spy/tests/test_push.py::test_push_signal_with_metadata PASSED            [ 40%]
+build	27-Jan-2020 21:36:09	spy/tests/test_push.py::test_push_capsules PASSED                        [ 41%]
+build	27-Jan-2020 21:36:16	spy/tests/test_push.py::test_push_threshold_metric_metadata PASSED       [ 43%]
+build	27-Jan-2020 21:36:17	spy/tests/test_search.py::test_simple_search PASSED                      [ 44%]
+build	27-Jan-2020 21:36:17	spy/tests/test_search.py::test_dataframe_single_row_with_id PASSED       [ 45%]
+build	27-Jan-2020 21:36:17	spy/tests/test_search.py::test_dataframe_multi_row PASSED                [ 47%]
+build	27-Jan-2020 21:36:18	spy/tests/test_search.py::test_dataframe_warnings_and_duplicates PASSED  [ 48%]
+build	27-Jan-2020 21:36:25	spy/tests/test_search.py::test_path_with_datasource PASSED               [ 50%]
+build	27-Jan-2020 21:36:25	spy/tests/test_search.py::test_dataframe_bad_datasource PASSED           [ 51%]
+build	27-Jan-2020 21:36:26	spy/tests/test_search.py::test_type_search PASSED                        [ 52%]
+build	27-Jan-2020 21:36:27	spy/tests/test_search.py::test_path_search_recursive PASSED              [ 54%]
+build	27-Jan-2020 21:36:27	spy/tests/test_search.py::test_path_search_non_recursive PASSED          [ 55%]
+build	27-Jan-2020 21:36:27	spy/tests/test_search.py::test_path_search_pagination PASSED             [ 56%]
+build	27-Jan-2020 21:36:28	spy/tests/test_search.py::test_datasource_name_search PASSED             [ 58%]
+build	27-Jan-2020 21:36:28	spy/tests/test_search.py::test_search_pagination PASSED                  [ 59%]
+build	27-Jan-2020 21:36:28	spy/tests/test_search.py::test_search_bad_workbook PASSED                [ 60%]
+build	27-Jan-2020 21:36:28	spy/tests/test_search.py::test_search_workbook_guid PASSED               [ 62%]
+build	27-Jan-2020 21:36:28	spy/tests/test_search.py::test_include_archived PASSED                   [ 63%]
+build	27-Jan-2020 21:36:28	spy/workbooks/tests/test_load.py::test_load_folder PASSED                [ 64%]
+build	27-Jan-2020 21:36:28	spy/workbooks/tests/test_load.py::test_load_zipfile PASSED               [ 66%]
+build	27-Jan-2020 21:36:34	spy/workbooks/tests/test_pull.py::test_pull PASSED                       [ 67%]
+build	27-Jan-2020 21:36:37	spy/workbooks/tests/test_push.py::test_example_export PASSED             [ 68%]
+build	27-Jan-2020 21:36:38	spy/workbooks/tests/test_push.py::test_push_repeatedly FAILED            [ 70%]
+build	27-Jan-2020 21:36:51	spy/workbooks/tests/test_push.py::test_workbook_paths PASSED             [ 71%]
+build	27-Jan-2020 21:36:52	spy/workbooks/tests/test_push.py::test_owner PASSED                      [ 72%]
+build	27-Jan-2020 21:36:54	spy/workbooks/tests/test_push.py::test_worksheet_order PASSED            [ 74%]
+build	27-Jan-2020 21:36:57	spy/workbooks/tests/test_push.py::test_missing_worksteps PASSED          [ 75%]
+build	27-Jan-2020 21:36:58	spy/workbooks/tests/test_push.py::test_bad_metric PASSED                 [ 77%]
+build	27-Jan-2020 21:37:00	spy/workbooks/tests/test_push.py::test_ancillaries PASSED                [ 78%]
+build	27-Jan-2020 21:37:01	spy/workbooks/tests/test_push.py::test_archived_worksheets PASSED        [ 79%]
+build	27-Jan-2020 21:37:01	spy/workbooks/tests/test_push.py::test_images PASSED                     [ 81%]
+build	27-Jan-2020 21:37:02	spy/workbooks/tests/test_push.py::test_copied_workbook_with_journal PASSED [ 82%]
+build	27-Jan-2020 21:37:03	spy/workbooks/tests/test_push.py::test_topic_links PASSED                [ 83%]
+build	27-Jan-2020 21:37:05	spy/workbooks/tests/test_push.py::test_replace_acl PASSED                [ 85%]
+build	27-Jan-2020 21:37:13	spy/workbooks/tests/test_push.py::test_item_references PASSED            [ 86%]
+build	27-Jan-2020 21:37:19	spy/workbooks/tests/test_push.py::test_datasource_map_by_path PASSED     [ 87%]
+build	27-Jan-2020 21:37:21	spy/workbooks/tests/test_push.py::test_datasource_map_by_data_id PASSED  [ 89%]
+build	27-Jan-2020 21:37:24	spy/workbooks/tests/test_push.py::test_datasource_map_by_file PASSED     [ 90%]
+build	27-Jan-2020 21:37:26	spy/workbooks/tests/test_push.py::test_workbook_push_and_refresh PASSED  [ 91%]
+build	27-Jan-2020 21:37:26	spy/workbooks/tests/test_push.py::test_globals PASSED                    [ 93%]
+build	27-Jan-2020 21:37:27	spy/workbooks/tests/test_push.py::test_scalar_edit PASSED                [ 94%]
+build	27-Jan-2020 21:37:27	spy/workbooks/tests/test_save.py::test_bad_filename FAILED               [ 95%]
+build	27-Jan-2020 21:37:33	spy/workbooks/tests/test_search.py::test_non_recursive PASSED            [ 97%]
+build	27-Jan-2020 21:37:39	spy/workbooks/tests/test_search.py::test_recursive PASSED                [ 98%]
+build	27-Jan-2020 21:37:40	spy/workbooks/tests/test_search.py::test_archived PASSED                 [100%]
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	=================================== FAILURES ===================================
+build	27-Jan-2020 21:37:40	_____________________________ test_push_repeatedly _____________________________
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	    @pytest.mark.system
+build	27-Jan-2020 21:37:40	    def test_push_repeatedly():
+build	27-Jan-2020 21:37:40	        workbooks = test_load.load_example_export()
+build	27-Jan-2020 21:37:40	        workbooks = [workbooks[0]]
+build	27-Jan-2020 21:37:40	    
+build	27-Jan-2020 21:37:40	>       push1_df = spy.workbooks.push(workbooks, path='test_push_repeatedly')
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	spy/workbooks/tests/test_push.py:179: 
+build	27-Jan-2020 21:37:40	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	workbooks = [Workbook "Example Topic" (811B1488-297A-4FD2-AE7C-A1FE0E3B3641)]
+...
+build	27-Jan-2020 21:37:40	            if not at_least_one_thing_pushed:
+build	27-Jan-2020 21:37:40	                if errors == 'raise':
+build	27-Jan-2020 21:37:40	                    raise RuntimeError('Could not find the following dependencies:\n%s\n'
+build	27-Jan-2020 21:37:40	                                       'Therefore, could not import the following workbooks:\n%s\n' %
+build	27-Jan-2020 21:37:40	                                       ('\n'.join(dependencies_not_found),
+build	27-Jan-2020 21:37:40	>                                       '\n'.join([str(workbook) for workbook in workbooks])))
+build	27-Jan-2020 21:37:40	E                   RuntimeError: Could not find the following dependencies:
+build	27-Jan-2020 21:37:40	E                   Workbook D833DC83-9A38-48DE-BF45-EB787E9E8375, Worksheet BFB529B8-F127-49FC-81B3-55BCCE4CC2B1, Workstep 89535DFA-9A1A-4E75-BF3E-32048EB2B7F5
+build	27-Jan-2020 21:37:40	E                   Workbook D833DC83-9A38-48DE-BF45-EB787E9E8375, Worksheet F255BF0D-CCE1-4021-B863-B121FB605913, Workstep 108C566D-6293-4075-BBD5-C22E174F00AE
+build	27-Jan-2020 21:37:40	E                   Workbook D833DC83-9A38-48DE-BF45-EB787E9E8375, Worksheet 1F02C6C7-5009-4A13-9343-CDDEBB6AF7E6, Workstep 221933FE-7956-4888-A3C9-AF1F3971EBA5
+build	27-Jan-2020 21:37:40	E                   Workbook D833DC83-9A38-48DE-BF45-EB787E9E8375, Worksheet F255BF0D-CCE1-4021-B863-B121FB605913, Workstep 79B86A9F-43CE-47BD-9C29-8940BF6B5D6C
+build	27-Jan-2020 21:37:40	E                   Therefore, could not import the following workbooks:
+build	27-Jan-2020 21:37:40	E                   Workbook "Example Topic" (811B1488-297A-4FD2-AE7C-A1FE0E3B3641)
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	spy/workbooks/_push.py:275: RuntimeError
+build	27-Jan-2020 21:37:40	----------------------------- Captured stdout call -----------------------------
+build	27-Jan-2020 21:37:40	Loading from "/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sdk/pypi/seeq/spy/workbooks/tests/../../docs/Documentation/Example Export"
+build	27-Jan-2020 21:37:40	Success
+build	27-Jan-2020 21:37:40	Pushing workbooks
+build	27-Jan-2020 21:37:40	[1/1] Processing Topic "Example Topic"
+build	27-Jan-2020 21:37:40	______________________________ test_bad_filename _______________________________
+build	27-Jan-2020 21:37:40	
+...
+build	27-Jan-2020 21:37:40	            with pytest.raises(OSError):
+build	27-Jan-2020 21:37:40	                # We just barf immediately if we are supplied a bad folder name
+build	27-Jan-2020 21:37:40	>               spy.workbooks.save(workbook, os.path.join(temp, r'Bad|Folder*Name'))
+build	27-Jan-2020 21:37:40	E               Failed: DID NOT RAISE <class 'OSError'>
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	spy/workbooks/tests/test_save.py:20: Failed
+build	27-Jan-2020 21:37:40	----------------------------- Captured stdout call -----------------------------
+build	27-Jan-2020 21:37:40	Loading from "/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sdk/pypi/seeq/spy/workbooks/tests/../../docs/Documentation/Example Export"
+build	27-Jan-2020 21:37:40	Success
+build	27-Jan-2020 21:37:40	Saving to "/tmp/tmpayss28lz/Bad|Folder*Name/My_Workbook_Has_Bad_Characters_In_It_And_That_Sucks_Dude (D833DC83-9A38-48DE-BF45-EB787E9E8375)"
+build	27-Jan-2020 21:37:40	Success
+build	27-Jan-2020 21:37:40	=============================== warnings summary ===============================
+build	27-Jan-2020 21:37:40	sdk/pypi/seeq/spy/assets/tests/test_assets_system.py::test_build
+build	27-Jan-2020 21:37:40	sdk/pypi/seeq/spy/assets/tests/test_assets_system.py::test_build_with_module
+build	27-Jan-2020 21:37:40	sdk/pypi/seeq/spy/assets/tests/test_assets_system.py::test_no_path
+...
+build	27-Jan-2020 21:37:40	
+build	27-Jan-2020 21:37:40	-- Docs: https://docs.pytest.org/en/latest/warnings.html
+build	27-Jan-2020 21:37:40	===== 2 failed, 72 passed, 7 deselected, 26 warnings in 192.53s (0:03:12) ======
+build	27-Jan-2020 21:37:40	Killed: [PID 28534] java -Dlogback.configurationFile=/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/supervisor/image/configuration/logback-core.xml -Xmx300M -Xms300M -XX:+ExitOnOutOfMemoryError -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=34230,suspend=n -jar /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/supervisor/image/supervisor-core-0.48.00-v202001272022-SNAPSHOT.jar --image /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64 --global /home/bamboo/.seeq --data /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir --config /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir/configuration/supervisor;/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/supervisor/image/configuration --debug
+build	27-Jan-2020 21:37:40	Killed: [PID 28594] bash /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/seeq -l /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir/log/pilot/process-monitor.log diag monitor
+build	27-Jan-2020 21:37:40	Killed: [PID 28604] python -m pilot -l /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir/log/pilot/process-monitor.log diag monitor
+build	27-Jan-2020 21:37:40	Killed: [PID 28597] java -Xms503M -Xmx503M -XX:+UseG1GC -XX:MaxGCPauseMillis=1000 -XX:+AlwaysPreTouch -XX:SoftRefLRUPolicyMSPerMB=331 -XX:+ExitOnOutOfMemoryError -XX:-CreateCoredumpOnCrash -Xlog:gc*:"/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir/log/jvm-link/jvm-link-gc-%t.log":time,uptime,tags:filecount=2,filesize=10M -Dlogback.configurationFile=/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/jvm-link/image/configuration/logback.xml -jar /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/jvm-link/image/seeq-link-agent-0.48.00-v202001272022-SNAPSHOT.jar --name=JVM Agent --data=/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir --seeqUrl=http://ip-172-31-20-49:34216 --remote=false --connectorSearchPaths=connectors/*/seeq-link-connector-*.jar;/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir/plugins/connectors/*/*seeq-link-connector*.jar --disableConsoleLogging=true
+build	27-Jan-2020 21:37:40	Killed: [PID 28608] bash /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/seeq -d /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir -q -i db start -t postgres --disable-keypress
+build	27-Jan-2020 21:37:40	Killed: [PID 28626] python -m pilot -d /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir -q -i db start -t postgres --disable-keypress
+build	27-Jan-2020 21:37:40	Killed: [PID 28612] bash /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/seeq -d /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir -q -i db start -t cassandra --disable-keypress
+build	27-Jan-2020 21:37:40	Killed: [PID 28624] python -m pilot -d /home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir -q -i db start -t cassandra --disable-keypress
+build	27-Jan-2020 21:37:40	Killed: [PID 28673] /bin/sh -c "/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/product/image/x64/cassandra/files/bin/run-cassandra" "/home/bamboo/bamboo-agent-home/xml-data/build-dir/CRAB-CUO-JOB1/sq-run-data-dir/cassandra/conf" -f

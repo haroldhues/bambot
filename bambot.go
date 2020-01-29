@@ -410,6 +410,15 @@ func scanString(bodyStr string) ScanResult {
 		return ScanResult{Comment: "Bambot detected a C# unit test/integration test failure!", LogSnippet: context}
 	}
 
+	start = "============================= test session starts =============================="
+	end = "=================================== FAILURES ==================================="
+	if strings.LastIndex(bodyStr, start) >= 0 && strings.LastIndex(bodyStr, end) >= 0  {
+		context = getSubstringAfter(bodyStr, start)
+		if len(context) > 0 {
+			return ScanResult{Comment: "Bambot detected a Python (sdk?) unit test test failure!", LogSnippet: context}
+		}
+	}
+
 	return nonMatch()
 }
 
@@ -425,16 +434,43 @@ func getSubstring(input string, start string, end string) string {
 			fullSnippet := beforeEnd[startIndex:]
 
 			// In case there are any super wide log lines, truncate them to a reasonable width
-			snippet := truncateLines(fullSnippet, 120)
+			snippet := truncateLinesWidth(fullSnippet, 120)
 			return snippet
 		}
 	}
 	return ""
 }
 
+// Get a snippet of a string after a start pattern. The results will include the start. If no result is found
+// an emopty string is returned
+func getSubstringAfter(input string, start string) string {
+	startIndex := strings.LastIndex(input, start)
+
+	if startIndex >= 0 {
+		fullSnippet := truncateLinesCount(input[startIndex:], 120)
+		
+		// In case there are any super wide log lines, truncate them to a reasonable width
+		snippet := truncateLinesWidth(fullSnippet, 120)
+		return snippet
+	}
+	return ""
+}
+
+// Given a multi-line string, truncate to be no more than maxCount lines,
+// adding an ellipsis (...) any place that is truncated
+func truncateLinesCount(bodyStr string, maxCount int) string {
+	var lines = strings.Split(bodyStr, "\n")
+	if len(lines) > maxCount {
+		lines = lines[:maxCount]
+		lines = append(lines, "...")
+		return strings.Join(lines, "\n")
+	}
+	return bodyStr
+}
+
 // Given a multi-line string, truncate each line to be no wider than maxWidth,
 // adding an ellipsis (...) any place that is truncated
-func truncateLines(bodyStr string, maxWidth int) string {
+func truncateLinesWidth(bodyStr string, maxWidth int) string {
 	lines := strings.Split(bodyStr, "\n")
 	var result strings.Builder
 	for idx, line := range lines {
